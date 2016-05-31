@@ -1,2 +1,2 @@
-# Speedometer
+# Speed Measurer
 Arduino
