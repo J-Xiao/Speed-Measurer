@@ -72,8 +72,14 @@ long get_distance_right(){ //Function used to measure the distance in the right
 }
 
 void setup() {
-
-}
+  Serial.begin (9600);
+  pinMode(trigPin_left, OUTPUT);
+  pinMode(echoPin_left, INPUT);
+  pinMode(trigPin_middle, OUTPUT);
+  pinMode(echoPin_middle, INPUT);
+  pinMode(trigPin_right, OUTPUT);
+  pinMode(echoPin_right, INPUT);
+} 
 
 void loop() {
   unsigned long time_half;
