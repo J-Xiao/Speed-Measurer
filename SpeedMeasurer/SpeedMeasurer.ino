@@ -82,6 +82,7 @@ void setup() {
 
   pinMode(LED_green, OUTPUT);
   pinMode(LED_red, OUTPUT);
+  pinMode(servo_pointer, OUTPUT);
 } 
 
 void loop() {
