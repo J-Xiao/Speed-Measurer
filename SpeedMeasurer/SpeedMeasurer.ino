@@ -79,6 +79,9 @@ void setup() {
   pinMode(echoPin_middle, INPUT);
   pinMode(trigPin_right, OUTPUT);
   pinMode(echoPin_right, INPUT);
+
+  pinMode(LED_green, OUTPUT);
+  pinMode(LED_red, OUTPUT);
 } 
 
 void loop() {
