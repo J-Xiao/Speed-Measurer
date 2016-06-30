@@ -9,6 +9,10 @@
 #define trigPin_right 13 // Trigger Pin of the sensor on the right
 #define LED_red 1
 #define LED_green 2
+#define servo_pointer 3
+
+Servo Pointer;
+int pos = 0;
 
 long distance_left, distance_middle, distance_right;
 long distance_half;
@@ -94,5 +98,6 @@ void loop() {
   distance_left = get_distance_left();
   distance_half = diatance_left/1.414;   // distance_left*sin(45) = half of the distance (in cm)
   
-
+  pointer.write(0);                      //Reset the servo pointer
+  
 }
