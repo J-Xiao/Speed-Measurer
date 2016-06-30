@@ -99,5 +99,8 @@ void loop() {
   distance_half = diatance_left/1.414;   // distance_left*sin(45) = half of the distance (in cm)
   
   pointer.write(0);                      //Reset the servo pointer
-  
+
+  if(distance_left){                     // A vehicle is detected on the left side
+    time_left = millis();                // When a vehicle is detected, check time
+  }
 }
