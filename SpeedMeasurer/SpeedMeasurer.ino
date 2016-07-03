@@ -105,6 +105,9 @@ void loop() {
     while(!get_distance_middle){         // Wait until the sensor in the middle to give feeedback
       //Just wait
     }
+    time_middle = millis();              // The same vehicle is detected in the middle, check the time again
+    time_half_left = time_middle - time_left;   // The time difference is the time used by the vehicle to cover distance_half
+    speed_one = distance_half/(10*time_half_left);   // v = s/t, v is in m/s
     
   }
 }
