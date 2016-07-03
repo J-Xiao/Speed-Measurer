@@ -109,5 +109,8 @@ void loop() {
     time_half_left = time_middle - time_left;   // The time difference is the time used by the vehicle to cover distance_half
     speed_one = distance_half/(10*time_half_left);   // v = s/t, v is in m/s
     
+    while(!get_distance_right){
+      //Just wait
+    }
   }
 }
