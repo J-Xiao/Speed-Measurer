@@ -102,7 +102,7 @@ void loop() {
 
   if(distance_left){                     // A vehicle is detected on the left side
     time_left = millis();                // When a vehicle is detected, check time
-    while(!get_distance_middle){         // Wait until the sensor in the middle to give feeedback
+    while(!get_distance_middle()){         // Wait until the sensor in the middle to give feeedback
       //Just wait
     }
     time_middle = millis();              // The same vehicle is detected in the middle, check the time again
