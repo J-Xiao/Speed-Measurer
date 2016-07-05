@@ -112,5 +112,8 @@ void loop() {
     while(!get_distance_right){
       //Just wait
     }
+    time_right = millis();
+    time_half_right = time_right - time_middle;
+    speed_two = distance_half/(10*time_half_right);   // Do the same thing again
   }
 }
