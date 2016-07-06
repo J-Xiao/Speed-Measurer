@@ -115,5 +115,8 @@ void loop() {
     time_right = millis();
     time_half_right = time_right - time_middle;
     speed_two = distance_half/(10*time_half_right);   // Do the same thing again
+  }else{
+    speed_one = 0;                               // If no vehicle is detected, set the speed to 0
+    speed_two = 0;
   }
 }
