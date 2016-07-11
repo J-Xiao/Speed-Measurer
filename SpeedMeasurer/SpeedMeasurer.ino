@@ -119,4 +119,7 @@ void loop() {
     speed_one = 0;                               // If no vehicle is detected, set the speed to 0
     speed_two = 0;
   }
+  average_speed_m_s = (speed_one + speed_two)/2;     // Calculate the average speed to reduce error
+  average_speed_km_h = average_speed_m_s*3.6;
+  
 }
