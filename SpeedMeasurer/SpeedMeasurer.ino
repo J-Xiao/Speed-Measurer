@@ -121,5 +121,7 @@ void loop() {
   }
   average_speed_m_s = (speed_one + speed_two)/2;     // Calculate the average speed to reduce error
   average_speed_km_h = average_speed_m_s*3.6;
-  
+  while(average_speed_km_h){
+
+  }
 }
