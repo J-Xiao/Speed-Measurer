@@ -129,7 +129,8 @@ void loop() {
       digitalWrite(LED_red, LOW);
     }
     else{
-      
+      digitalWrite(LED_green, LOW);
+      digitalWrite(LED_red, HIGH);
     }
   }
 }
