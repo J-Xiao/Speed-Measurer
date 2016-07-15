@@ -133,4 +133,5 @@ void loop() {
       digitalWrite(LED_red, HIGH);
     }
   }
+  delay(20);
 }
