@@ -125,7 +125,8 @@ void loop() {
     pos = average_speed_km_h;                       //Need an algorithm to convert speed to the angle we want
     pointer.write(pos);
     if(average_speed_km_h <= 10){
-      
+      digitalWrite(LED_green, HIGH);
+      digitalWrite(LED_red, LOW);
     }
     else{
       
